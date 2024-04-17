@@ -222,7 +222,7 @@ table {
     height: 50vh;
     margin-top: 5%;
     .overlay{
-        background-color: rgba(0, 0, 0, 0.658);
+        background-color: rgba(0, 0, 0, 0.682);
         height: 100%;
         color: white;
         flex-direction: column;
@@ -334,7 +334,6 @@ table {
         display: flex;
         flex-direction: column;
         gap: 30px;
-        justify-content: right;
         span{
             text-decoration: underline;
         }
