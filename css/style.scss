@@ -1,0 +1,413 @@
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.banner{
+    background-image: url("../imgs/Rectangle\ 2.jpg");
+    background-position: center ;
+    background-size: cover;
+    align-items: center;
+    height: 60vh;
+    .mobile-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        .hamburger{
+            height: 4rem;
+            width: 4rem;
+            background-color: transparent;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            border: 2px brown solid;
+            .line{
+                width: 70%;
+                height: 4px;
+                background-color: brown;
+                border-radius: 2px;
+            }
+        }
+    }
+}
+    .nav{padding: 5vh;
+        display: none;
+        transition: all ease-in-out .60s;
+        .pc-nav{
+            padding: 8px;
+            border-radius: 5px;
+            box-shadow: 2px 3px 10px black;
+            display: flex;
+            background-color: white;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+            text-align: center;
+            img{
+                height: 2rem;
+            }
+            ul{
+                display: flex;gap: 50px;
+                color: brown;
+            } 
+           .nav-icon{
+            width: 4rem;
+            height: 4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: brown;
+            border-radius: 3px;
+           }
+        }
+       
+}
+.sec-section{
+    .nashy{padding: 4%;
+        img{
+        width: 100%;
+        height: 40vh;
+    } 
+    .text{
+        display: flex;
+        flex-direction: column;
+        height: 54vh;
+        justify-content: space-between;
+        h1{
+            font-size: 25px;
+            font-weight: 700;
+            color: brown;
+        }
+        .bold-text{
+            font-weight: bolder;
+            span{
+                color: brown;
+            }
+            
+        }
+        .first-button{
+                height: 2.8rem;
+                width: 7rem;
+                color: brown;
+                border: 2px brown solid;
+                background-color: white;
+            }
+            .first-button:hover{
+                transition: all ease-in-out .60s;
+                background-color: brown;
+                color: white;
+                border: 2px white solid;
+                box-shadow: 2px 3px 8px grey;
+            }
+    }
+    }
+    .hey{
+        height: 55vh;
+    }
+    .pic{
+        background-image: url("../imgs/Rectangle\ 14.jpg");
+        height: 45vh;
+        .overlay{
+            margin-bottom: 20px;
+            width: 100%;
+            height: 120%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            justify-content: space-around;
+            align-items: flex-end;
+            .box{
+                width: 30%;
+                height: 30%;
+                background-color: brown;
+                border: 2px white solid;
+                box-shadow: 2px 3px 10px black;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-size: 17px;
+                font-weight: bold;
+                padding: 4px;
+            }
+            .box:hover{
+                transition: all ease 0.5s;
+                scale: 1.08;
+            }
+        }
+        
+    }
+   
+}
+.third-section{
+    .white{
+        background-color: brown;
+        padding: 30px;
+        display: flex;
+        height: 50vh;
+        flex-direction: column;
+        justify-content: space-between;
+        color: white;
+        border-left: 4px brown;
+        h1{
+            font-size: 30px;
+            font-weight: bolder;
+            width: 180px;
+        }
+    }
+    .imgss{
+        display: flex;
+        height: 25vh;
+        img{
+            width: 34%;
+            border: 2px brown solid;
+        }
+    }
+}
+.four{
+    background-image: url("../imgs/pexels-cdc-3992949\ 1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    margin-top: 5%;
+    .overlay{
+        background-color: rgba(0, 0, 0, 0.658);
+        height: 100%;
+        color: white;
+        flex-direction: column;
+        display: flex;
+        padding: 30px;
+        justify-content: space-around;
+        h1{
+            width: 50%;
+        }
+        .inputs{
+            display: flex;
+            gap: 20px;
+        }
+        h1{
+            font-size: xx-large;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        input{
+            height: 3rem;
+            background-color: transparent;
+            padding: 20px;
+            border: 2px white solid;
+        }
+        input:hover{
+            transition: all .60s;
+            scale: 1.05;
+        }
+        button{
+            height: 3rem;
+            width: 9rem;
+            background-color: brown;
+            color: white;
+            border: none;
+        }
+        button:hover{
+            background-color: white;
+            color: brown;
+            transition: all ease-in-out .60s;
+            border: 2px brown solid;
+        }
+    }
+}
+.lorem{
+    .container{
+        margin-top: 5%;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        border: 2px brown solid;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 30px;
+        p{
+            width: 80%;
+        }
+        h1{
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+}
+.footer{
+    margin-top: 5%;
+    padding: 5%;
+    background-color: brown;
+    .container{
+        color: white;
+        .why{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .first-circle{
+                display: flex;
+                gap: 20px;
+                .circle{
+                    display: flex;
+                    gap: 5px;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .dot{
+                    width: 12px;
+                    height: 12px;
+                    background-color: black;
+                    border: 3px white solid;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+    .wow{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        h1{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .link{
+            line-height: 25px;
+            margin-left: 25px;
+        }
+    }
+    .community{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: right;
+        span{
+            text-decoration: underline;
+        }
+        h1{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .images{
+            img{
+                height: 70px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 568px) {  
+
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+   .banner{
+    .mobile-nav{
+        display: none;
+    }
+   }
+   .nav{
+    display: block;
+   }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    
+}
+
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) { 
+
+}
