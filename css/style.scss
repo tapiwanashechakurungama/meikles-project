@@ -5,6 +5,10 @@
    License: none (public domain)
 */
 
+@font-face {
+    font-family: 'Jost-Medium';
+    src: url("../Jost/Jost-VariableFont_wght.ttf");
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -48,12 +52,15 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+body{
+    font-family: 'Jost-Medium';
+}
 .banner{
     background-image: url("../imgs/Rectangle\ 2.jpg");
     background-position: center ;
     background-size: cover;
     align-items: center;
-    height: 60vh;
+    height: 70vh;
     .mobile-nav{
         display: flex;
         justify-content: center;
@@ -81,7 +88,7 @@ table {
         display: none;
         transition: all ease-in-out .60s;
         .pc-nav{
-            padding: 8px;
+            padding: 4px;
             border-radius: 5px;
             box-shadow: 2px 3px 10px black;
             display: flex;
@@ -93,15 +100,15 @@ table {
             align-items: center;
             text-align: center;
             img{
-                height: 2rem;
+                height: 23px;
             }
             ul{
                 display: flex;gap: 50px;
                 color: brown;
             } 
            .nav-icon{
-            width: 4rem;
-            height: 4rem;
+            width: 3rem;
+            height: 3rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -205,14 +212,93 @@ table {
             width: 180px;
         }
     }
-    .imgss{
+    .nashy{
         display: flex;
-        height: 25vh;
-        img{
-            width: 34%;
+        flex-direction: column;
+        justify-content: right;
+        .imgss{
+            display: flex;
+        }
+        .pic1{
+            background-image: url("../imgs/Rectangle\ 24.jpg");
+            height: 25vh;
+            width: 40%;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding: 15px;
+            border: 2px brown solid;
+        }
+        .pic2{
+            background-image: url("../imgs/Rectangle\ 20.jpg");
+            height: 25vh;
+            width: 40%;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding: 15px;
+            border: 2px brown solid;
+        }
+        .pic3{
+            background-image: url("../imgs/Rectangle\ 23.jpg");
+            height: 25vh;
+            width: 40%;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding: 15px;
+            border: 2px brown solid;
+        }
+        .pic4{
+            background-image: url("../imgs/Rectangle\ 2.jpg");
+            height: 25vh;
+            width: 40%;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding: 15px;
+            border: 2px brown solid;
+        }
+        .pic5{
+            background-image: url("../imgs/Rectangle\ 14.jpg");
+            height: 25vh;
+            width: 40%;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding: 15px;
+            border: 2px brown solid;
+        }
+        .pic6{
+            background-image: url("../imgs/Rectangle\ 22.jpg");
+            height: 25vh;
+            width: 40%;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding: 15px;
             border: 2px brown solid;
         }
     }
+   
 }
 .four{
     background-image: url("../imgs/pexels-cdc-3992949\ 1.jpg");
@@ -290,6 +376,15 @@ table {
     margin-top: 5%;
     padding: 5%;
     background-color: brown;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    a:hover{
+        transition: all ease .60s;
+        color: green;
+        text-decoration: underline;
+    }
     .container{
         color: white;
         .why{
@@ -328,6 +423,10 @@ table {
         .link{
             line-height: 25px;
             margin-left: 25px;
+            li{
+                text-decoration: none;
+                color: white;
+            }
         }
     }
     .community{
@@ -346,6 +445,7 @@ table {
                 height: 70px;
             }
         }
+
     }
 }
 

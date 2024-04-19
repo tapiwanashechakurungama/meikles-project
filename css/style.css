@@ -2,6 +2,10 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@font-face {
+  font-family: "Jost-Medium";
+  src: url("../Jost/Jost-VariableFont_wght.ttf");
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -52,12 +56,16 @@ table {
   border-spacing: 0;
 }
 
+body {
+  font-family: "Jost-Medium";
+}
+
 .banner {
   background-image: url("../imgs/Rectangle 2.jpg");
   background-position: center;
   background-size: cover;
   align-items: center;
-  height: 60vh;
+  height: 70vh;
 }
 .banner .mobile-nav {
   display: flex;
@@ -88,7 +96,7 @@ table {
   transition: all ease-in-out 0.6s;
 }
 .nav .pc-nav {
-  padding: 8px;
+  padding: 4px;
   border-radius: 5px;
   box-shadow: 2px 3px 10px black;
   display: flex;
@@ -101,7 +109,7 @@ table {
   text-align: center;
 }
 .nav .pc-nav img {
-  height: 2rem;
+  height: 23px;
 }
 .nav .pc-nav ul {
   display: flex;
@@ -109,8 +117,8 @@ table {
   color: brown;
 }
 .nav .pc-nav .nav-icon {
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -208,12 +216,90 @@ table {
   font-weight: bolder;
   width: 180px;
 }
-.third-section .imgss {
+.third-section .nashy {
   display: flex;
-  height: 25vh;
+  flex-direction: column;
+  justify-content: right;
 }
-.third-section .imgss img {
-  width: 34%;
+.third-section .nashy .imgss {
+  display: flex;
+}
+.third-section .nashy .pic1 {
+  background-image: url("../imgs/Rectangle 24.jpg");
+  height: 25vh;
+  width: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 15px;
+  border: 2px brown solid;
+}
+.third-section .nashy .pic2 {
+  background-image: url("../imgs/Rectangle 20.jpg");
+  height: 25vh;
+  width: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 15px;
+  border: 2px brown solid;
+}
+.third-section .nashy .pic3 {
+  background-image: url("../imgs/Rectangle 23.jpg");
+  height: 25vh;
+  width: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 15px;
+  border: 2px brown solid;
+}
+.third-section .nashy .pic4 {
+  background-image: url("../imgs/Rectangle 2.jpg");
+  height: 25vh;
+  width: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 15px;
+  border: 2px brown solid;
+}
+.third-section .nashy .pic5 {
+  background-image: url("../imgs/Rectangle 14.jpg");
+  height: 25vh;
+  width: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 15px;
+  border: 2px brown solid;
+}
+.third-section .nashy .pic6 {
+  background-image: url("../imgs/Rectangle 22.jpg");
+  height: 25vh;
+  width: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 15px;
   border: 2px brown solid;
 }
 
@@ -294,6 +380,15 @@ table {
   padding: 5%;
   background-color: brown;
 }
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+.footer a:hover {
+  transition: all ease 0.6s;
+  color: green;
+  text-decoration: underline;
+}
 .footer .container {
   color: white;
 }
@@ -333,6 +428,10 @@ table {
 .footer .wow .link {
   line-height: 25px;
   margin-left: 25px;
+}
+.footer .wow .link li {
+  text-decoration: none;
+  color: white;
 }
 .footer .community {
   display: flex;
