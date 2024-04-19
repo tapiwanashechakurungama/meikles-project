@@ -65,7 +65,7 @@ body {
   background-position: center;
   background-size: cover;
   align-items: center;
-  height: 70vh;
+  height: 75vh;
 }
 .banner .mobile-nav {
   display: flex;
@@ -105,20 +105,25 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  height: 70px;
   align-items: center;
   text-align: center;
 }
 .nav .pc-nav img {
-  height: 23px;
+  height: 60px;
+  width: 150px;
 }
 .nav .pc-nav ul {
   display: flex;
   gap: 50px;
   color: brown;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 .nav .pc-nav .nav-icon {
-  width: 3rem;
-  height: 3rem;
+  width: 5rem;
+  height: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -170,6 +175,8 @@ body {
 .sec-section .pic {
   background-image: url("../imgs/Rectangle 14.jpg");
   height: 45vh;
+  background-position: center;
+  background-size: cover;
 }
 .sec-section .pic .overlay {
   margin-bottom: 20px;
@@ -230,12 +237,25 @@ body {
   width: 40%;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: end;
   padding: 15px;
   border: 2px brown solid;
+}
+.third-section .nashy .pic1:hover {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in-out 0.6s;
+  scale: 1.03;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 25px;
 }
 .third-section .nashy .pic2 {
   background-image: url("../imgs/Rectangle 20.jpg");
@@ -243,12 +263,25 @@ body {
   width: 40%;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: end;
   padding: 15px;
   border: 2px brown solid;
+}
+.third-section .nashy .pic2:hover {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in-out 0.6s;
+  scale: 1.03;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 25px;
 }
 .third-section .nashy .pic3 {
   background-image: url("../imgs/Rectangle 23.jpg");
@@ -256,12 +289,25 @@ body {
   width: 40%;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: end;
   padding: 15px;
   border: 2px brown solid;
+}
+.third-section .nashy .pic3:hover {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in-out 0.6s;
+  scale: 1.03;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 25px;
 }
 .third-section .nashy .pic4 {
   background-image: url("../imgs/Rectangle 2.jpg");
@@ -269,12 +315,25 @@ body {
   width: 40%;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: end;
   padding: 15px;
   border: 2px brown solid;
+}
+.third-section .nashy .pic4:hover {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in-out 0.6s;
+  scale: 1.03;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 25px;
 }
 .third-section .nashy .pic5 {
   background-image: url("../imgs/Rectangle 14.jpg");
@@ -282,6 +341,7 @@ body {
   width: 40%;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   display: flex;
   flex-direction: column;
@@ -289,18 +349,43 @@ body {
   padding: 15px;
   border: 2px brown solid;
 }
+.third-section .nashy .pic5:hover {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in-out 0.6s;
+  scale: 1.03;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 25px;
+}
 .third-section .nashy .pic6 {
   background-image: url("../imgs/Rectangle 22.jpg");
   height: 25vh;
   width: 40%;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: end;
   padding: 15px;
   border: 2px brown solid;
+}
+.third-section .nashy .pic6:hover {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in-out 0.6s;
+  scale: 1.03;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 25px;
 }
 
 .four {
