@@ -314,26 +314,24 @@ body{
         display: flex;
         padding: 30px;
         justify-content: space-around;
-        .myjoy{
-            width: 440px;
-        }
         h1{
             width: 50%;
+            font-size: xx-large;
+            font-weight: bold;
+            margin-bottom: 20px;
         }
         .inputs{
             display: flex;
             gap: 20px;
-        }
-        h1{
-            font-size: xx-large;
-            font-weight: bold;
-            margin-bottom: 20px;
         }
         input{
             height: 3rem;
             background-color: transparent;
             padding: 20px;
             border: 2px white solid;
+            color: white;
+            width: 35%;
+            color: white;
         }
         input:hover{
             transition: all .60s;

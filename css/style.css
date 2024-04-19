@@ -320,26 +320,24 @@ body {
   padding: 30px;
   justify-content: space-around;
 }
-.four .overlay .myjoy {
-  width: 440px;
-}
 .four .overlay h1 {
   width: 50%;
+  font-size: xx-large;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 .four .overlay .inputs {
   display: flex;
   gap: 20px;
-}
-.four .overlay h1 {
-  font-size: xx-large;
-  font-weight: bold;
-  margin-bottom: 20px;
 }
 .four .overlay input {
   height: 3rem;
   background-color: transparent;
   padding: 20px;
   border: 2px white solid;
+  color: white;
+  width: 35%;
+  color: white;
 }
 .four .overlay input:hover {
   transition: all 0.6s;
