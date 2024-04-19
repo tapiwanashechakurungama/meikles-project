@@ -320,6 +320,9 @@ body {
   padding: 30px;
   justify-content: space-around;
 }
+.four .overlay .myjoy {
+  width: 440px;
+}
 .four .overlay h1 {
   width: 50%;
 }
