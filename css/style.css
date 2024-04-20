@@ -58,6 +58,8 @@ table {
 
 body {
   font-family: "Jost-Medium";
+  padding: 0;
+  margin: 0;
 }
 
 .banner {
@@ -115,7 +117,7 @@ body {
 }
 .nav .pc-nav ul {
   display: flex;
-  gap: 50px;
+  gap: 30px;
   color: brown;
   text-align: center;
   justify-content: center;
@@ -206,6 +208,7 @@ body {
 .sec-section .pic .overlay .box:hover {
   transition: all ease 0.5s;
   scale: 1.08;
+  rotate: 5deg;
 }
 
 .third-section .white {

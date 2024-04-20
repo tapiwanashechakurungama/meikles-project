@@ -54,6 +54,8 @@ table {
 }
 body{
     font-family: 'Jost-Medium';
+    padding: 0;
+    margin: 0;
 }
 .banner{
     background-image: url("../imgs/Rectangle\ 2.jpg");
@@ -105,7 +107,8 @@ body{
                 width: 150px;
             }
             ul{
-                display: flex;gap: 50px;
+                display: flex;
+                gap: 30px;
                 color: brown;
                 text-align: center;
                 justify-content: center;
@@ -196,6 +199,7 @@ body{
             .box:hover{
                 transition: all ease 0.5s;
                 scale: 1.08;
+                rotate: 5deg;
             }
         }
         
