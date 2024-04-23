@@ -110,10 +110,20 @@ body{
             ul{
                 display: flex;
                 gap: 30px;
+                font-size: larger;
+                font-weight: 600;
                 color: brown;
                 text-align: center;
                 justify-content: center;
                 align-items: center;
+                li:hover{
+                    text-decoration: underline;
+                    transition: all ease-in .60s;
+                    opacity: 0.5;
+                    cursor: pointer;
+                    cursor: progress;
+                    rotate: 5deg; 
+                }
             } 
            .nav-icon{
             width: 5rem;
@@ -427,6 +437,7 @@ body{
         input:hover{
             transition: all .60s;
             scale: 1.05;
+            border: 3px brown solid;
         }
         button{
             height: 3rem;
@@ -439,7 +450,7 @@ body{
             background-color: white;
             color: brown;
             transition: all ease-in-out .60s;
-            border: 2px brown solid;
+            border: 3px brown solid;
         }
     }
 }
