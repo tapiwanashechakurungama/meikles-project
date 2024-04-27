@@ -57,6 +57,89 @@ body{
     padding: 0;
     margin: 0;
 }
+
+.phone-footer{
+    display: block;
+    background-color: brown;
+    padding: 20px;
+    color: white;
+    .nashy{
+        opacity: 0.6;
+    }
+    .order{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+        .circle{
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            .dot{
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+                background-color: black;
+                border: 3px white solid;
+            }
+        }
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        gap: 5px;
+        h1{
+            font-weight: 13px;
+            font-weight: bolder;
+        }
+        .link1{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+            .first{
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+                a:hover{
+                    color: blue;
+                    transition: all ease-in .60s;
+                }
+
+            }
+        }
+    }
+    .wassup{
+        display:flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 8px;
+    }
+    span{
+        text-decoration: underline;
+    }
+        h1{
+            font-weight: 13px;
+            font-weight: bolder;
+        }
+    
+    .images{
+        display: flex;
+        justify-content: space-between;
+        img{
+            width: 7rem;
+            height: 5rem;
+        }
+    }
+   
+}
+
+
 .banner{
     background-image: url("../imgs/Rectangle\ 2.jpg");
     background-position: center ;
@@ -457,7 +540,8 @@ body{
 .lorem{
     .container{
         margin-top: 5%;
-        padding: 5%;
+        padding-top: 40px;
+        padding-bottom: 40px;
         display: flex;
         flex-direction: column;
         border: 2px brown solid;
@@ -466,7 +550,7 @@ body{
         align-items: center;
         gap: 30px;
         p{
-            width: 80%;
+            width: 95%;
         }
         h1{
             font-size: 20px;
@@ -474,82 +558,11 @@ body{
         }
     }
 }
-.footer{
-    margin-top: 5%;
-    padding: 5%;
-    background-color: brown;
-    a{
-        text-decoration: none;
-        color: white;
-    }
-    a:hover{
-        transition: all ease-in-out .60s;
-        color: greenyellow;
-        text-decoration: underline;
-    }
-    .container{
-        color: white;
-        .why{
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            .first-circle{
-                display: flex;
-                gap: 20px;
-                .circle{
-                    display: flex;
-                    gap: 5px;
-                    justify-content: center;
-                    align-items: center;
-                }
-                .dot{
-                    width: 12px;
-                    height: 12px;
-                    background-color: black;
-                    border: 3px white solid;
-                    border-radius: 50%;
-                }
-            }
-        }
-    }
-    .wow{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        justify-content: center;
-        align-items: center;
-        h1{
-            font-size: 20px;
-            font-weight: bold;
-        }
-        .link{
-            line-height: 25px;
-            margin-left: 25px;
-            li{
-                text-decoration: none;
-                color: white;
-            }
-        }
-    }
-    .community{
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        span{
-            text-decoration: underline;
-        }
-        h1{
-            font-size: 20px;
-            font-weight: bold;
-        }
-        .images{
-            img{
-                height: 70px;
-            }
-        }
 
-    }
+.footer{
+    display: none;
 }
+
 
 
 
@@ -574,12 +587,93 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 568px) {  
+@media (min-width: 568px) { 
+     
 
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) {  
+@media (min-width: 768px) {
+        .phone-footer{
+            display: none;
+        }
+    .footer{
+        display: block;
+        margin-top: 5%;
+        padding: 5%;
+        background-color: brown;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            transition: all ease-in-out .60s;
+            color: greenyellow;
+            text-decoration: underline;
+        }
+        .container{
+            color: white;
+            .why{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                .first-circle{
+                    display: flex;
+                    gap: 20px;
+                    .circle{
+                        display: flex;
+                        gap: 5px;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .dot{
+                        width: 12px;
+                        height: 12px;
+                        background-color: black;
+                        border: 3px white solid;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+        .wow{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            h1{
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .link{
+                line-height: 25px;
+                margin-left: 25px;
+                li{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+        .community{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            span{
+                text-decoration: underline;
+            }
+            h1{
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .images{
+                img{
+                    height: 70px;
+                }
+            }
+    
+        }
+    } 
 
 }
 
@@ -593,6 +687,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
    .nav{
     display: block;
    }
+
 
 }
 
