@@ -171,16 +171,28 @@ body {
   border-radius: 2px;
 }
 
+.active {
+  transition: 0.5s ease-in-out all;
+}
+.active .nav {
+  display: block !important;
+}
+
 .nav {
   padding: 5vh;
-  display: none;
+  display: none !important;
   transition: all ease-in-out 0.6s;
+  display: flex;
+  flex-direction: column;
 }
 .nav .pc-nav {
   border-radius: 5px;
   box-shadow: 2px 3px 10px black;
   display: flex;
+  flex-direction: column;
   background-color: white;
+  padding: 20px;
+  height: 100vh !important;
   justify-content: center;
   align-items: center;
   justify-content: space-between;
@@ -191,6 +203,7 @@ body {
 }
 .nav .pc-nav ul {
   display: flex;
+  flex-direction: column;
   gap: 30px;
   font-size: larger;
   font-weight: 600;
@@ -214,8 +227,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: brown;
   border-radius: 2px;
+  display: none;
 }
 
 .sec-section .nashy {
@@ -570,6 +583,64 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Small devices (landscape phones, 576px and up) */
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
+  .nav {
+    padding: 5vh;
+    display: block !important;
+    transition: all ease-in-out 0.6s;
+  }
+  .nav .pc-nav {
+    position: relative;
+    padding: 0;
+    height: 12vh !important;
+    border-radius: 5px;
+    box-shadow: 2px 3px 10px black;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    text-align: center;
+  }
+  .nav .pc-nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-size: larger;
+    font-weight: 600;
+    color: brown;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+  .nav .pc-nav ul li:hover {
+    text-decoration: underline;
+    transition: all ease-in 0.6s;
+    opacity: 0.5;
+    cursor: pointer;
+    cursor: progress;
+    rotate: 5deg;
+  }
+  .nav .pc-nav .nav-icon {
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    border-radius: 2px;
+    display: block;
+  }
+  .nav .pc-nav .chido {
+    position: absolute;
+    left: 0px;
+  }
+  .nav .pc-nav .rudo {
+    right: 0px;
+    position: absolute;
+  }
   .phone-footer {
     display: none;
   }
